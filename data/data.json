@@ -1,0 +1,47 @@
+{
+
+    "product":[
+
+        {
+            "id":1001,
+            "name":"Sony Wh-ch510 Bluetooth Wireless",
+            "price":149
+
+        },
+
+        {
+            "id":1002,
+            "name":"boAt Rockerz 450",
+            "price":49
+
+        },
+
+        {
+            "id":1003,
+            "name":"JBL Tune 760NC",
+            "price":179
+
+        },
+
+        {
+            "id":1004,
+            "name":"Logitech H111 Wired",
+            "price":39
+
+        },
+
+        {
+            "id":1005,
+            "name":"Apple Airpods Max Bluetooth Headset",
+            "price":199
+
+        },
+
+        {
+            "id":1006,
+            "name":"Zebronics Zeb-Thunder Wired",
+            "price":29
+
+        }
+    ]
+}
