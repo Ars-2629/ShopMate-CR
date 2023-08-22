@@ -1,9 +1,9 @@
 import {Routes,Route} from 'react-router-dom';
 import { ProductList } from '../pages/ProductList';
-import {useState} from 'react'
+
 
 export function AllRoutes() {
-  const [cartlist,setCartList] = useState(false);
+  const cartlist = false;
   return (
 
       <Routes>
