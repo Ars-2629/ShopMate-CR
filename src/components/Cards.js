@@ -10,7 +10,7 @@ export function Cards({carddata,cartlist}) {
       className="border w-96 h-48"
       alt=""
     />
-    <h1 className="text-md my-3 font-[Bebas]">{carddata.name}</h1>
+    <h1 className="text-md my-3">{carddata.name}</h1>
     
   </div>
 
@@ -22,7 +22,7 @@ export function Cards({carddata,cartlist}) {
   </div>
 </div>) : (
 
-  <div className="w-[450px] sm:w-[1200px] p-2 border sm:my-2 my-1 shadow-md ">
+  <div className="w-[450px] sm:w-[1200px] p-2 border sm:my-2 my-1 shadow-md">
    <div className="flex justify-between items-center">
    <img
       src={`./assets/images/${carddata.id}.png`}

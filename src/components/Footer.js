@@ -1,7 +1,7 @@
 
 export function Footer() {
   return (
-    <div className="border-t-2 shadow-t-md max-w-screen">
+    <div className="border-t-2 shadow-t-md max-w-screen font-[Bebas]">
       <footer className="flex mt-4 sm:mx-[450px] mx-[130px] my-5">
       <div>
       <span className="text-sm sm:text-xl">ShopMate-2024 All Right Reserved</span>
