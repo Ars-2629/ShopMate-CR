@@ -1,22 +1,25 @@
 import {useState,useEffect} from 'react';
 
-export function useFetch(path) {
-    const [data,setData] = useState([]);
+export function useFetch() {
+   
+    const [storageList,setStorageList]=useState(JSON.parse(localStorage.getItem("productlist")) || [])
+   
+    localStorage.setItem("productlist",JSON.stringify(storageList));
     
-   const url = `http://localhost:3001/product?${path}`;
+   const url = 'http://localhost:3001/product';
 
     useEffect(()=>{
         const fetchData = async ()=>{
           const response = await fetch(url);
           const respondedData = await response.json();
-          setData(respondedData);
-          // console.log(data);
-      
+    // setData(respondedData);
+    
+    setStorageList(respondedData);
         }
-       fetchData();
+ fetchData();
       },[url])
 
     
 
-  return ([data]);
+  return ([storageList]);
 }

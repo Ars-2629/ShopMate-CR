@@ -1,10 +1,11 @@
 import { NavLink,Link } from 'react-router-dom';
 import Logo from '../assets/logo.png';
+import { useCart } from '../context/CartContext';
 
 export function Header() {
   const activeClass = 'p-1 px-5 text-blue-600 bg-gray-100 rounded';
   const inactiveClass = 'p-1 px-3 hover:bg-gray-200 hover:text-gray-800 rounded';
-
+  const {cartList} = useCart();
   return (
     <div className='border-b-2 shadow-sm font-[Bebas]'>
        <header className='mx-14 my-3 text-sm sm:mx-28 sm:text-base'>
@@ -34,7 +35,7 @@ export function Header() {
             
             <Link to='cartlist'>
             <div className='mt-2'>
-                <span>Cart:2</span>
+                <span>Cart:{cartList.length}</span>
             </div>
             </Link>
            

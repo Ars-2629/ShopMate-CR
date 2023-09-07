@@ -1,14 +1,14 @@
 import {Routes,Route} from 'react-router-dom';
-import { ProductList } from '../pages/ProductList';
+import { ProductList,Cart } from '../pages/export';
 
 
 export function AllRoutes() {
-  const cartlist = false;
+
   return (
 
       <Routes>
-        <Route path='/' element={<ProductList  cartlist={!cartlist} title='Home'/>} />
-        <Route path='cartlist' element={<ProductList urlPath ='price=149&price=179' cartlist={cartlist} title='Cart' />} />
+        <Route path='/' element={<ProductList title='Home'/>} />
+        <Route path='cartlist' element={<Cart  title='Cart' />} />
       </Routes>
    
   )
